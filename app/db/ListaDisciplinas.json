@@ -1,0 +1,18 @@
+{
+  "ListaDisciplinas": [
+    {
+      "id": "2",
+      "Descricao": "Redes",
+      "Data": "2021-02-02",
+      "Valor": 1050,
+      "Presencial": "Não"
+    },
+    {
+      "id": "1",
+      "Descricao": "Desenvolvimento",
+      "Data": "2021-02-01",
+      "Valor": 995,
+      "Presencial": "Sim"
+    }
+  ]
+}

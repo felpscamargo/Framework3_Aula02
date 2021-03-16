@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Disciplinas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/system.js"></script>
+    <script>
+        System.defaultJSExtensions = true;
+        System.import('js/index.js').catch(err=> console.log(err));
+    </script>
+</head>
+<body>
+    <h1 class="text-center" style="padding-top: 10px;">Lista de Disciplinas da Universidade</h1>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="codigo" style="float: right;">Código da Disciplina: </label>
+            </div>
+            <div class="col">
+                <input required id="codigo"></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="descricao" style="float: right;">Descrição: </label>
+            </div>
+            <div class="col">
+                <input required id="descricao"></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="data" style="float: right;">Data de inicio: </label>
+            </div>
+            <div class="col">
+                <input required id="data" type="date"></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="valor" style="float: right;">Valor da disciplina (R$): </label>
+            </div>
+            <div class="col">
+                <input required id="valor" type="number"></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="presencial" style="float: right;">Presencial: </label>
+            </div>
+            <div class="col">
+                <select id="presencial">
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <br>
+<div class="text-center">
+    <button type="submit" id="BotaoIncluir" class="btn btn-success">Incluir</button>
+    <button type="submit" id="BotaoImportar" class="btn btn-primary">Importar</button>
+    <button type="submit" id="BotaoConsultar" class="btn btn-secondary">Consultar</button>
+    <button type="submit" id="BotaoExcluir" class="btn btn-danger">Excluir</button>
+</div>
+    <br>
+<table class="table table-striped table-dark table-hover">
+    <tr>
+        <th scope="col">Código da Disciplina</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Data de inicio</th>
+        <th scope="col">Valor da disciplina (R$)</th>
+        <th scope="col">Presencial</th>
+    </tr>
+    <tbody id="Resultados">
+    </tbody>
+
+</table>
+
+
+</body>
+</html>
